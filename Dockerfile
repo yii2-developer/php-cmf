@@ -9,7 +9,7 @@ RUN \
     && docker-php-ext-install pdo_mysql \
     && docker-php-ext-enable pdo_mysql \
 
-    && pecl install xdebug \
+    && docker-php-ext-install xdebug \
     && docker-php-ext-enable xdebug \
 
     && apt-get autoremove -y && apt-get clean all
